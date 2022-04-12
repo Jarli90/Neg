@@ -7,7 +7,7 @@ namespace Neg.CliTest
     public partial class Student
     {
         public int Age { get; set; }
-        public string Name { get; set; }
+        public string? Name { get; set; }
 
         public bool Enlisted { get; set; }
 

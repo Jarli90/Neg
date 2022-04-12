@@ -5,7 +5,8 @@ namespace Neg.CliTest
     {
         public bool Equals(Teacher other)
         {
-            if(Object.ReferenceEquals(this,other)) return true;
+            if (ReferenceEquals(null, other)) return false;
+            if (ReferenceEquals(this, other)) return true;
             
             if(!Name.Equals(other.Name)) return false;
 
@@ -44,7 +45,6 @@ namespace Neg.CliTest
                 return result;
             }
         }
-        
 
         public static bool operator ==(Teacher lhs, Teacher rhs) 
         {
@@ -57,7 +57,5 @@ namespace Neg.CliTest
         {
             return !(lhs == rhs);
         }
-
-        
     }
 }
